@@ -6,7 +6,7 @@ add_action( 'init', 'webspeed_arkiv_create_posttype_arkiv' );
 
 function webspeed_arkiv_create_posttype_arkiv() {
 	register_post_type(
-	    'webarkiv',
+	    'webspeedarkiv',
 	    array(
 	    	'labels' => array(
 	    		'name' => __('Arkiv', 'websepeed-arkiv-domain'),

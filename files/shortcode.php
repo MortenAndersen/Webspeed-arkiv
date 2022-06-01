@@ -20,7 +20,7 @@ function webspeed_arkiv($atts) {
 
 if (!empty($type)) {
     $loop = new WP_Query( array(
-        'post_type' => 'webarkiv',
+        'post_type' => 'webspeedarkiv',
         'orderby' => 'title',
         'orderby' => $orderby,
         'order' => $order,
@@ -28,7 +28,7 @@ if (!empty($type)) {
         'offset' => $offset,
         'tax_query' => array(
             array (
-                'taxonomy' => 'arkiv-type',
+                'taxonomy' => 'webarkiv-type',
                 'field' => 'slug',
                 'terms' => $type,
             )

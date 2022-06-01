@@ -1,5 +1,5 @@
 <?php
-// Custom Taxonomy = 'arkiv-type'
+// Custom Taxonomy = 'webarkiv-type'
 
     function custom_taxonomy_arkiv() {
 
@@ -36,7 +36,7 @@
         'show_in_rest'                          => true,
 
     );
-    register_taxonomy( 'arkiv-type', array( 'webarkiv' ), $args );
+    register_taxonomy( 'webarkiv-type', array( 'webspeedarkiv' ), $args );
 }
 
 add_action( 'init', 'custom_taxonomy_arkiv', 2 );
