@@ -14,7 +14,7 @@ function webspeed_arkiv_create_posttype_arkiv() {
 	    	),
 	    	'public' => true,
 	    	'exclude_from_search' => true,
-			'show_in_admin_bar'   => true,
+			'show_in_admin_bar'   => false,
 			'show_in_nav_menus'   => false,
 			'publicly_queryable'  => false,
 			'query_var'           => false,
@@ -25,7 +25,7 @@ function webspeed_arkiv_create_posttype_arkiv() {
 	    	),
 	    	'show_in_rest' => true,
 	    	'rewrite' => array(
-	    		'slug' => 'webarkiv'
+	    		'slug' => 'web-arkiv'
 	    	),
 	    )
 	);
