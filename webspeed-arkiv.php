@@ -9,8 +9,10 @@ Text Domain: websepeed-arkiv-domain
 Author URI: https://www.web.dk.dk
 */
 
-
+// Check
+if( class_exists('ACF') ) {
 	require_once ('files/posttype.php');
 	require_once ('files/type.php');
 	require_once ('files/acf.php');
 	require_once ('files/shortcode.php');
+}
